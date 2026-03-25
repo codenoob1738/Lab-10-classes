@@ -87,4 +87,5 @@ console.log(item2.toString());
 const product1 = new ProductProperties("Nike Tech", 275.99, 1);
 const product2 = new ProductProperties("Adidas Ultraboost", 180.00, 1);
 const product3 = new ProductProperties("PS5", 1229.99, 2);
-const product4 = new ProductProperties("Apple", 20.00, 17);
+const product4 = new PerishableProductProperties("Apple", 20.00, 17, "2026-07-31");
+const product5 = new PerishableProductProperties("Mango", 3.99, 2, "2026-04-10");
