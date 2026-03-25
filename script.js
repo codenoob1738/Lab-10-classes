@@ -104,3 +104,8 @@ myStore.addProduct(product5);
 
 console.log("Total Inventory Value Before Discount is applied is: $" + myStore.getInventoryValue().toFixed(2));
 
+// Value of inventory after a 15% discount is applied to all products in the inventory //
+
+ProductProperties.applyDiscount(myStore.inventory, 0.15);
+
+console.log("Total Inventory Value After Discount is applied is: $" + myStore.getInventoryValue().toFixed(2));
