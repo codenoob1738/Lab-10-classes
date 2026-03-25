@@ -80,3 +80,8 @@ const item2 = new PerishableProductProperties("Ice Cream", 4.99, 1, "2027-04-15"
 
 console.log(item1.toString());
 console.log(item2.toString());
+
+
+// Creating 5 products //
+
+const product1 = new ProductProperties("Nike Tech", 275.99, 1);
