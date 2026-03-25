@@ -35,6 +35,14 @@ class PerishableProductProperties extends ProductProperties {
     }
 }
 
+// Store class contains an inventory array that stores Products and Perishable Products objects //
+class store {
+    constructor() {
+        this.inventory = [];
+    }
+}
+
+
 // Instances of the PerishableProductProperties class//
 
 const item1 = new PerishableProductProperties("Lettuce", 2.59, 1, "2026-03-31");
