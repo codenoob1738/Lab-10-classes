@@ -86,3 +86,4 @@ console.log(item2.toString());
 
 const product1 = new ProductProperties("Nike Tech", 275.99, 1);
 const product2 = new ProductProperties("Adidas Ultraboost", 180.00, 1);
+const product3 = new ProductProperties("PS5", 1229.99, 2);
