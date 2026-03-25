@@ -109,3 +109,13 @@ console.log("Total Inventory Value Before Discount is applied is: $" + myStore.g
 ProductProperties.applyDiscount(myStore.inventory, 0.15);
 
 console.log("Total Inventory Value After Discount is applied is: $" + myStore.getInventoryValue().toFixed(2));
+
+// Finding a specific product by name and printing it's details //
+
+const findProduct = myStore.findProductByName("PS5");
+
+if (findProduct) {
+    console.log(findProduct.toString());
+} else {
+    console.log("Product not found.");
+}
