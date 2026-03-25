@@ -85,3 +85,4 @@ console.log(item2.toString());
 // Creating 5 products //
 
 const product1 = new ProductProperties("Nike Tech", 275.99, 1);
+const product2 = new ProductProperties("Adidas Ultraboost", 180.00, 1);
