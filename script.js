@@ -53,7 +53,7 @@ class store {
         let totalValue = 0;
 
         this.inventory.forEach(product => {
-            totalValue = product.getTotalValue();
+            totalValue = totalValue + product.getTotalValue();
         });
 
         return totalValue;
@@ -99,4 +99,8 @@ myStore.addProduct(product2);
 myStore.addProduct(product3);
 myStore.addProduct(product4);
 myStore.addProduct(product5);
+
+// Total Inventory Before discount is applied //
+
+console.log("Total Inventory Value Before Discount is applied is: $" + myStore.getInventoryValue().toFixed(2));
 
