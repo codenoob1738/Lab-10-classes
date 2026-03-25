@@ -45,6 +45,8 @@ class store {
     addProduct(product) {
         this.inventory.push(product);
     }
+    
+    // Method to calculate the total value of all products in the inventory.//
 
     getInventoryValue() {
 
@@ -55,6 +57,18 @@ class store {
         });
 
         return totalValue;
+    }
+
+    // Method to find a product by name in the inventory and returns null if not found //
+
+    findProductByName(name) {
+
+        for (let product of this.inventory) {
+            if (product.name === name) {
+                return product;
+            }
+        }
+        return null;
     }
 }
 
