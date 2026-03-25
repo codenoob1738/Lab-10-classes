@@ -12,6 +12,16 @@ class ProductProperties {
     toString() {
         return `Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}}`;
     }
+
+    // Static Method added to the ProductProperties Class Method//
+
+    static applyDiscount(products, discount) {
+
+        for (let product of products) {
+            product.price = product.price - (product.price * discount);
+        }
+    }
+
 }
 
 class PerishableProductProperties extends ProductProperties {
