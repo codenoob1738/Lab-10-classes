@@ -97,4 +97,6 @@ const myStore = new store();
 myStore.addProduct(product1);
 myStore.addProduct(product2);
 myStore.addProduct(product3);
+myStore.addProduct(product4);
+myStore.addProduct(product5);
 
