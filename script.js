@@ -36,6 +36,7 @@ class PerishableProductProperties extends ProductProperties {
 }
 
 // Store class contains an inventory array that stores Products and Perishable Products objects //
+
 class store {
     constructor() {
         this.inventory = [];
@@ -43,6 +44,17 @@ class store {
 
     addProduct(product) {
         this.inventory.push(product);
+    }
+
+    getInventoryValue() {
+
+        let totalValue = 0;
+
+        this.inventory.forEach(product => {
+            totalValue = product.getTotalValue();
+        });
+
+        return totalValue;
     }
 }
 
