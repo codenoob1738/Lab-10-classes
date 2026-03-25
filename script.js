@@ -95,4 +95,5 @@ const product5 = new PerishableProductProperties("Mango", 3.99, 2, "2026-04-10")
 const myStore = new store();
 
 myStore.addProduct(product1);
+myStore.addProduct(product2);
 
